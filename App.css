@@ -1,0 +1,101 @@
+:root{
+  --red:red;
+  --gray:grey;
+
+}
+*{
+  margin: 0;
+}
+
+
+body{
+  font-family: sans-serif;
+}
+
+button{
+  all: unset;
+  padding: 5px 16px;
+  background-color: var(--red);
+  height: 34px;
+  color: aliceblue;
+  font-weight: 500;
+
+
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap : 24px;
+}
+
+.hero{
+  
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  height: calc (100vh - 72px);
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap:36px ;
+}
+
+.hero h1{
+  font-weight: 800;
+  line-height: 100px ;
+  font-size: 108px;
+}
+
+.hero p{
+  font-weight: 600;
+  color: rgb(12, 145, 122); 
+  max-width: 400px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 50px;
+}
+
+.hero-btn button{
+  font-size: 24px ;
+}
+
+.secondary-btn{
+  background: transparent;
+  color: rgb(21, 109, 62);
+  border: 1px solid black;
+}
+
+.shopping p{
+  font-size: 16px;
+  margin-bottom:8px;
+}
+.brand-icons{
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 768px) {
+  .container { flex-direction: column; 
+   } 
+ } 
+ @media (min-width: 768px) { 
+ .container {
+  flex-direction: row; 
+   } 
+ }
